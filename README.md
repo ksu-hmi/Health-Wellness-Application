@@ -5,3 +5,5 @@
 # Returns educational links to user
 
 # Plans to expand to blood pressure and height/waist circumference values
+# Plans to track exercise activity
+# Plans to track nutrition activity
