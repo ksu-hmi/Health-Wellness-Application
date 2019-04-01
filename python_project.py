@@ -110,3 +110,6 @@ elif int(blood_sugar) >= 141:
      print("Your glucose measurement of", blood_sugar, "is high. Contact your physician.")
 else:
      pass
+
+print()
+print("For more educational information on blood sugar, visit", "http://www.cdc.gov/diabetes")
