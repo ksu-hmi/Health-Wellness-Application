@@ -96,6 +96,8 @@ else:
      pass
 
 #the optimal and elevated conditions work but Stage 1, Stage 2, and Crisis don't. Still working on it. **Update: got it working**
+print()
+print("For more educational information on blood pressure, visit", "https://www.cdc.gov/bloodpressure/index.htm")
 
 print()
 #BG = blood glucose(sugar)
@@ -112,4 +114,4 @@ else:
      pass
 
 print()
-print("For more educational information on blood sugar, visit", "http://www.cdc.gov/diabetes")
+print("For more educational information on blood sugar, visit", "https://www.cdc.gov/diabetes/home/index.html")
