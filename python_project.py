@@ -19,8 +19,8 @@ day_md = input("Enter number of days since last MD appointment: ")
 
 print()
 #BMI=Body Mass Index
-BMI = str((int(weight)/2.205)/int((float(height)*float(.0254))*(float(height)*float(.0254))))
-print("Your BMI is: ", BMI)
+BMI = str(int(float(weight)/float(2.205))/int((float(height)*float(0.0254))*(float(height)*float(0.0254))))
+print("Your BMI is: ", BMI[0:4])
 print()
 if BMI <= str(24.9):
      print("You're BMI is within normal range.")
@@ -69,30 +69,44 @@ print()
 print("The daily total number of calories you need to gain about 1 pound per week is", str(float(TDC)+float(500.0)))
 
 print()
-#BFP = estimated Body Fat Percentage
+#BFP = BMI estimated Body Fat Percentage
 
 if gender == "female":
      BFP = str(float(1.20) * float(BMI) + float(0.23) * float(age) - float(5.4))
-     print("You're estimated body fat percentage is",BFP)
+     print("You're estimated body fat percentage is",BFP[0:5])
 else:
      BFP = str(float(1.20) * float(BMI) + float(0.23) * float(age) - float(16.2))
-     print("You're estimated body fat percentage is",BFP)
+     print("You're estimated body fat percentage is",BFP[0:5])
 
 print()
 #SBP = systolic blood pressure
 #DSP = diastolic blood pressure
 
-if systolic_bp <= "120" and diastolic_bp <= "80":
+if int(systolic_bp) <= 120 and int(diastolic_bp) <= 80:
      print("Your blood pressure at ", systolic_bp,"/",diastolic_bp, " is optimal.")
-elif systolic_bp >= "121" <= "129" or diastolic_bp <= "79":
+elif int(systolic_bp) >= 121 and int(systolic_bp) <= 129 and int(diastolic_bp) <= 79:
      print("Your blood pressure at ", systolic_bp,"/",diastolic_bp, " is elevated. Schedule an appointment to see your physician.")
-elif systolic_bp >= "130" <= "139" or diastolic_bp >= "80" <= "89":
+elif int(systolic_bp) >= 130 and int(systolic_bp) <= 139 and int(diastolic_bp) >= 80 and int(diastolic_bp) <= 89:
      print("Your blood pressure at ", systolic_bp,"/",diastolic_bp, " is Stage 1 hypertension. Contact your physician.")
-elif systolic_bp >= "140" <= "179" or diastolic_bp >= "90" <= "119":
+elif int(systolic_bp) >= 140 and int(systolic_bp) <= 179 and int(diastolic_bp) >= 90 and int(diastolic_bp) <= 119:
      print("Your blood pressure at ", systolic_bp,"/",diastolic_bp, " is Stage 2 hypertension. Contact your physician.")
-elif systolic_bp >= "180" <= "200" or diastolic_bp >= "120" <= "150":
+elif int(systolic_bp) >= 180 and int(systolic_bp) <= 200 and int(diastolic_bp) >= 120 and int(diastolic_bp) <= 150:
      print("Your blood pressure at ", systolic_bp,"/",diastolic_bp, " indicates a hypertensive crisis. Dial 911 or proceed to emergency room.")
 else:
      pass
 
-#the optimal and elevated conditions work but Stage 1, Stage 2, and Crisis don't. Still working on it.
+#the optimal and elevated conditions work but Stage 1, Stage 2, and Crisis don't. Still working on it. **Update: got it working**
+
+print()
+#BG = blood glucose(sugar)
+
+if int(blood_sugar) <= 75:
+     print("Your glucose measurement of", blood_sugar, "is low. Contact your physician.")
+elif int(blood_sugar) >= 76 and int(blood_sugar) <= 100:
+     print("An 8hr fasted glucose measurement of", blood_sugar, "is normal.")
+elif int(blood_sugar) >= 101 and int(blood_sugar) <= 140:
+     print("A non-fasted glucose measurement of", blood_sugar, "is normal.")
+elif int(blood_sugar) >= 141:
+     print("Your glucose measurement of", blood_sugar, "is high. Contact your physician.")
+else:
+     pass
