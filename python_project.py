@@ -69,7 +69,7 @@ print()
 print("The daily total number of calories you need to gain about 1 pound per week is", str(float(TDC)+float(500.0)))
 
 print()
-#BFP = BMI estimated Body Fat Percentage
+#BFP = BMI estimated Body Fat Percentage (https://www.calculator.net/body-fat-calculator.html)
 
 if gender == "female":
      BFP = str(float(1.20) * float(BMI) + float(0.23) * float(age) - float(5.4))
