@@ -85,7 +85,9 @@ print()
 #SBP = systolic blood pressure
 #DSP = diastolic blood pressure
 
-if int(systolic_bp) <= 120 and int(diastolic_bp) <= 80:
+if int(systolic_bp) <= 89 and int(diastolic_bp) <= 59:
+     print("Your blood pressure at ", systolic_bp,"/",diastolic_bp, " is possibly low. Contact your physician.")
+elif int(systolic_bp) >= 90 and int(systolic_bp) <= 120 and int(diastolic_bp) >= 60 and int(diastolic_bp) <= 80:
      print("Your blood pressure at ", systolic_bp,"/",diastolic_bp, " is optimal.")
 elif int(systolic_bp) >= 121 and int(systolic_bp) <= 129 and int(diastolic_bp) <= 79:
      print("Your blood pressure at ", systolic_bp,"/",diastolic_bp, " is elevated. Schedule an appointment to see your physician.")
