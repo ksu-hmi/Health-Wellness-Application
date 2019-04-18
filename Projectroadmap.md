@@ -1,20 +1,20 @@
 Project Roadmap
 
-#1 Research Information (In Progrees)
+#1 Research Information (In Progress)
 
 #2 BMI code (completed)
 
 #3 BMI code test
 
-#4 BMI Length Statement- use slice [0:4] or [0:5] (completed)
+#4 BMI Length Statement- use slice [0:4] or [0:5] (DONE)
 
-#5 BMI conditionals 
+#5 BMI conditionals (DONE)
 
-#6 BMI response
+#6 BMI response (DONE)
 
 #7 Research other code integration
 
-#8 educational links: http://www.cdc.gov/healthyweight/effects/index.html, https://www.cdc.gov/bloodpressure/index.htm, https://www.cdc.gov/diabetes/home/index.html (completed)
+#8 educational links: http://www.cdc.gov/healthyweight/effects/index.html, https://www.cdc.gov/bloodpressure/index.htm, https://www.cdc.gov/diabetes/home/index.html (DONE)
 
 #9 BMR code (Basal Metabolic Rate- base number of daily calories your body burns as a male/female, no matter your activity)
 
