@@ -25,7 +25,7 @@ print()
 if BMI <= str(18.4):
      print("You're BMI is below normal range. Consult your physician.\n")
      print("For helpful weight management information, visit: ", "http://www.cdc.gov/healthyweight/effects/index.html")
-elif BMI >= str(18.5) and <= str(24.9):
+elif BMI >= str(18.5) and BMI <= str(24.9):
      print("You're BMI is within normal range.")
 else:
      print("You're BMI is above normal range. Consult your physician.\n")
