@@ -29,7 +29,10 @@ def enterBMI():
     print("Your BMI is: ", BMI[0:4])
     print()
     
-    if BMI <= str(24.9):
+    if BMI <= str(18.4):
+         print("You're BMI is below normal range. Consult your physician.\n")
+         print("For helpful weight management information, visit: ", "http://www.cdc.gov/healthyweight/effects/index.html")
+    elif BMI >= str(18.5) and <= str(24.9):
          print("You're BMI is within normal range.")
     else:
          print("You're BMI is above normal range. Consult your physician.\n")
@@ -113,7 +116,9 @@ def enterBP():
     systolic_bp = input("Enter measured systolic blood pressure: ")
     diastolic_bp = input("Enter measured diastolic blood pressure: ")
     
-    if int(systolic_bp) <= 120 and int(diastolic_bp) <= 80:
+    if int(systolic_bp) <= 89 and int(diastolic_bp) <= 59:
+         print("Your blood pressure at ", systolic_bp,"/",diastolic_bp, " is possibly low. Contact your physician.")
+    elif int(systolic_bp) >= 90 and int(systolic_bp) <= 120 and int(diastolic_bp) >= 60 and int(diastolic_bp) <= 80:
          print("Your blood pressure at ", systolic_bp,"/",diastolic_bp, " is optimal.")
     elif int(systolic_bp) >= 121 and int(systolic_bp) <= 129 and int(diastolic_bp) <= 79:
          print("Your blood pressure at ", systolic_bp,"/",diastolic_bp, " is elevated. Schedule an appointment to see your physician.")
