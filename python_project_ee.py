@@ -70,7 +70,7 @@ def enterActivity(BMR):
     print("EA = Extra Active (very hard exercise/sports & physical job or 2x training")
     print()
     
-    activity_level = input("Enter activity level: SD, LA, MA, VA, or EZ: ")
+    activity_level = input("Enter activity level: SD, LA, MA, VA, or EA: ")
         
     if activity_level == "SD":
          TDC = str(float(BMR) * float(1.2))
