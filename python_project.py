@@ -120,3 +120,18 @@ else:
 
 print()
 print("For more educational information on blood sugar, visit", "https://www.cdc.gov/diabetes/home/index.html")
+
+
+
+print()
+#day_md = number of days since last MD appointment
+
+if int(day_md) <= 180:
+     print("It has been", day_md, "days since your last physician appointment. Check if another appointment is necessary.")
+elif int(day_md) >= 181 and int(day_md) <= 364:
+     print("It has been", day_md, "days since your last physician appointment. You may be overdue for a follow-up appointment.")
+else:
+     print("It has been", day_md, "days since your last physician appointment. It is recommended to have a check-up at least once a year. Schecule an appointment to see your physician.")
+
+print()
+print("For more educational information on MD check-ups, visit", "https://www.cdc.gov/family/checkup/index.htm")
