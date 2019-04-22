@@ -36,10 +36,16 @@ Project Roadmap
 
 #18 Privacy Consent code: Present user with privacy consent statement and record acknowledgement
 
-#19 Possibly code Waist-Hip Ratio and conditional responses?
+#19 Possibly code Waist to Height Ratio and conditional responses? (DONE)
 
 #20 Code a report that prints and possibly emails report to user or physician?
 
 #21 Code functions based on original inputs and response code (In Progress)
 
 #22 Code user login (In Progress)
+
+#23 Code daily exercise time conditionals and educational link (DONE)
+
+#24 Code daily steps conditionals and educational link (DONE)
+
+#25 Continue to test coding (In Progress)
