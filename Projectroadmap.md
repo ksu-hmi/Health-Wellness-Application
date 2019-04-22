@@ -14,7 +14,7 @@ Project Roadmap
 
 #7 Research other code integration
 
-#8 educational links: http://www.cdc.gov/healthyweight/effects/index.html, https://www.cdc.gov/bloodpressure/index.htm, https://www.cdc.gov/diabetes/home/index.html (DONE)
+#8 educational links: http://www.cdc.gov/healthyweight/effects/index.html, https://www.cdc.gov/bloodpressure/index.htm, https://www.cdc.gov/diabetes/home/index.html, https://www.cdc.gov/family/checkup/index.htm (DONE)
 
 #9 BMR code (Basal Metabolic Rate- base number of daily calories your body burns as a male/female, no matter your activity)
 
