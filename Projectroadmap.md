@@ -49,3 +49,5 @@ Project Roadmap
 #24 Code daily steps conditionals and educational link (DONE)
 
 #25 Continue to test coding (In Progress)
+
+#26 Develop powerpoint for presentation (In Progress)
