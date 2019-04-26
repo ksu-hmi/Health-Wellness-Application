@@ -12,9 +12,6 @@ activity_level = input("Enter activity level; sedentary (little or no exercise),
 ex_time = input("Enter daily exercise time in minutes: ")
 steps = input("Enter total steps for the day: ")
 calories = input("Enter total calorie intake for the day: ")
-protein = input("Enter total protein intake for the day in grams: ")
-carbs = input("Enter total carbohydrate intake for the day in grams: ")
-fat = input("Enter total fat intake for the day in grams: ")
 day_md = input("Enter number of days since last MD appointment: ")
 
 print()
@@ -23,12 +20,12 @@ BMI = str(int(float(weight)/float(2.205))/int((float(height)*float(0.0254))*(flo
 print("Your BMI is: ", BMI[0:4])
 print()
 if BMI <= str(18.4):
-     print("You're BMI is below normal range. Consult your physician.\n")
+     print("BMI is your Body Mass Index. Your BMI is below normal range. Consult your physician.\n")
      print("For helpful weight management information, visit: ", "http://www.cdc.gov/healthyweight/effects/index.html")
 elif BMI >= str(18.5) and BMI <= str(24.9):
-     print("You're BMI is within normal range.")
+     print("BMI is your Body Mass Index. Your BMI is within normal range.")
 else:
-     print("You're BMI is above normal range. Consult your physician.\n")
+     print("BMI is your Body Mass Index. Your BMI is above normal range. Consult your physician.\n")
      print("For helpful weight management information, visit: ", "http://www.cdc.gov/healthyweight/effects/index.html")
 
 print()
@@ -36,10 +33,10 @@ print()
 
 if gender == "female":
      BMR = str(655 + int(4.35 * float(weight)) + int(4.7 * float(height)) - int(4.7 * float(age)))
-     print("Your BMR is: ", BMR)
+     print("BMR is your Base Metabolic Rate, the amount of daliy calories your body burns at rest. Your BMR is: ", BMR)
 elif gender == "male":
      BMR = str(66 + int(6.23 * float(weight)) + int(12.7 * float(height)) - int(6.8 * float(age)))
-     print("Your BMR is: ", BMR)
+     print("BMR is your Base Metabolic Rate, the amount of daliy calories your body burns at rest. Your BMR is: ", BMR)
 else:
      print("Invalid gender, weight, height, or age entry.")
 
