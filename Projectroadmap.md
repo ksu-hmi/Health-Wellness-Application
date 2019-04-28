@@ -30,7 +30,7 @@ Project Roadmap
 
 #15 Blood Glucose Response Code: Conditional responses based on entered blood sugar level (DONE)
 
-#16 Intake comparison code with conditional responses: Reported calories, protein, carbohydrate, and fat intake compared to Institute of Medicine recommendations for a balanced diet (http://www.nationalacademies.org/hmd/reports/2002/dietary-reference-intakes-for-energy-carbohydrate-fiber-fat-fatty-acids-cholesterol-protein-and-amino-acids.aspx)
+#16 Intake comparison code with conditional responses: Reported calories, protein, carbohydrate, and fat intake compared to Institute of Medicine recommendations for a balanced diet (http://www.nationalacademies.org/hmd/reports/2002/dietary-reference-intakes-for-energy-carbohydrate-fiber-fat-fatty-acids-cholesterol-protein-and-amino-acids.aspx) (Decided to Omit)
 
 #17 Last MD appointment code: Conditional responses if last appointment was within last 365 days (DONE)
 
