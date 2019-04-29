@@ -12,7 +12,7 @@ Project Roadmap
 
 #6 BMI response (DONE)
 
-#7 Research other code integration (In Progress)
+#7 Research other code integration (Done)
 
 #8 educational links: http://www.cdc.gov/healthyweight/effects/index.html, https://www.cdc.gov/bloodpressure/index.htm, https://www.cdc.gov/diabetes/home/index.html, https://www.cdc.gov/family/checkup/index.htm (DONE)
 
