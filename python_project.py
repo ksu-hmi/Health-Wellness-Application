@@ -33,7 +33,7 @@ print()
 
 if gender == "female":
      BMR = str(655 + int(4.35 * float(weight)) + int(4.7 * float(height)) - int(4.7 * float(age)))
-     print("BMR is your Base Metabolic Rate, the amount of daliy calories your body burns at rest. Your BMR is: ", BMR)
+     print("BMR is your Base Metabolic Rate, the amount of daily calories your body burns at rest. Your BMR is: ", BMR)
 elif gender == "male":
      BMR = str(66 + int(6.23 * float(weight)) + int(12.7 * float(height)) - int(6.8 * float(age)))
      print("BMR is your Base Metabolic Rate, the amount of daliy calories your body burns at rest. Your BMR is: ", BMR)
