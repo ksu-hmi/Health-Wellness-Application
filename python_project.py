@@ -16,7 +16,7 @@ day_md = input("Enter number of days since last MD appointment: ")
 
 print()
 #BMI=Body Mass Index
-BMI = str(int(float(weight)/float(2.205))/int((float(height)*float(0.0254))*(float(height)*float(0.0254))))
+BMI = str(int(float(weight)*float(703))/int((float(height)*float(height))))
 print("Your BMI is: ", BMI[0:4])
 print()
 if BMI <= str(18.4):
