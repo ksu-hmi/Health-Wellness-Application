@@ -1,10 +1,10 @@
 Project Roadmap
 
-#1 Research Information (In Progress)
+#1 Research Information (Done)
 
 #2 BMI code (Done)
 
-#3 BMI code test (In Progress)
+#3 BMI code test (Done)
 
 #4 BMI Length Statement- use slice [0:4] or [0:5] (DONE)
 
@@ -50,4 +50,4 @@ Project Roadmap
 
 #25 Continue to test coding (In Progress)
 
-#26 Develop powerpoint for presentation (In Progress)
+#26 Develop powerpoint for presentation (DONE)
