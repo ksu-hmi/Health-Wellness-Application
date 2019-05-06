@@ -334,6 +334,7 @@ def main():
     [8] - Exercise Recommendations
     [9] - Step Recommendations
     [10]- Doctor Visits
+    
     [E] - Exit
     """)
 
@@ -365,37 +366,36 @@ def main():
             break
     
         elif action == '5':
-            getWHR()
             print('5 selected')
+            getWHR()
             break
 
         elif action == '6':
-            getBP()
             print('6 selected')
+            getBP()
             break
         
         elif action == '7':
-            getBSugar()
             print('7 selected')
+            getBSugar()
             break
 
         elif action == '8':
-            getExer()
             print('8 selected')
+            getExer()
             break
         
         elif action == '9':
-            getSteps()
             print('9 selected')
+            getSteps()
             break
          
         elif action == '10':
-            getDoctor()
             print('10 selected')
+            getDoctor()
             break
         
         elif action == 'E':
-#            action = False
             print('\nExit selected')
             print("\nThank you, " + first + ". Enjoy your day.")  
             break
