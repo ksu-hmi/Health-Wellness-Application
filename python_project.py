@@ -32,17 +32,20 @@ def getBMI():
     weight = input("Enter your WEIGHT rounded to the nearest pound: ")
     waist  = input("Enter your WAIST CIRCUMFERENCE in inches: ") 
     
-    BMI =int(float(weight)*float(703))/int((float(height)*float(height)))
+    BMI = int(float(weight)*float(703))/int((float(height)*float(height)))
 
     print("\nYour Body Mass Index is:", round(BMI,2))
 
-    if BMI < 18.4:
-        print("Normal Range.")
+    if BMI <= 18.4:
+        print("BMI is your Body Mass Index. Your BMI is below normal range. Consult your physician.\n")
+        print("For helpful weight management information, visit: ", "http://www.cdc.gov/healthyweight/effects/index.html")
+    elif BMI >= 18.5 and BMI <= 24.9:
+        print("BMI is your Body Mass Index. Your BMI is within normal range.")
     else:
-        print("Above Normal Range. Consult your physician.\n" + 
-        "For helpful weight management information, visit:", "http://www.cdc.gov/healthyweight/effects/index.html")
+        print("BMI is your Body Mass Index. Your BMI is above normal range. Consult your physician.\n")
+        print("For helpful weight management information, visit: ", "http://www.cdc.gov/healthyweight/effects/index.html")
 
-    main()
+    #main()
 
     
 #getBMI()    
@@ -344,6 +347,7 @@ def main():
         if action == '1':
             print('1 selected')
             getBMI()
+            main()
             break
         
         elif action == '2':
@@ -399,5 +403,4 @@ def main():
             print('\nExit selected')
             print("\nThank you, " + first + ". Enjoy your day.")  
             break
-main()    
-
+main() 
