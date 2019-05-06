@@ -10,6 +10,24 @@
 # May 6, 2019                                         #
 # #####################################################
 
+# Initialize Variables 
+
+age = 0
+gender = " "
+height = 0
+weight = 0
+blood_sugar = 0
+systolic_bp = 0
+diastolic_bp = 0
+activity_level = " "
+ex_time = 0
+steps = 0
+calories = 0
+day_md = 0
+BMI = 0
+BMR = 0
+
+
 
 def getName():
     global name, first, last
@@ -35,15 +53,15 @@ def getBMI():
     BMI = int(float(weight)*float(703))/int((float(height)*float(height)))
 
     print("\nYour Body Mass Index is:", round(BMI,2))
+    print("For helpful weight management information, visit: ", "http://www.cdc.gov/healthyweight/effects/index.html")
 
     if BMI <= 18.4:
         print("BMI is your Body Mass Index. Your BMI is below normal range. Consult your physician.\n")
-        print("For helpful weight management information, visit: ", "http://www.cdc.gov/healthyweight/effects/index.html")
     elif BMI >= 18.5 and BMI <= 24.9:
         print("BMI is your Body Mass Index. Your BMI is within normal range.")
     else:
         print("BMI is your Body Mass Index. Your BMI is above normal range. Consult your physician.\n")
-        print("For helpful weight management information, visit: ", "http://www.cdc.gov/healthyweight/effects/index.html")
+    
 
     #main()
 
@@ -111,7 +129,9 @@ def enterActivity():
     """)
         
     activity_level = input("Review the options to select your activity_level: SD, LA, MA, VA, or EA: ")
-    print()    
+    print() 
+    print("BMI is also BFP, estimated Body Fat Percentage",  "https://www.calculator.net/body-fat-calculator.html")
+
     if activity_level == "SD":
          TDC = int(float(BMR) * float(1.2))
          print("The daily total number of calories you need in order to maintain your current weight is", round(TDC,0))
@@ -130,8 +150,7 @@ def enterActivity():
     elif activity_level != "EA":
          print("Invalid entry. Please try again.")
             
-    print("BMI is also BFP, estimated Body Fat Percentage",  "https://www.calculator.net/body-fat-calculator.html")
-    
+  
     print("\nThe daily total number of calories you need to lose about 1 pound per week is", int(float(TDC)-float(500)))
     print("The daily total number of calories you need to gain about 1 pound per week is", int(float(TDC)+float(500)))
 
@@ -346,26 +365,46 @@ def main():
 
         if action == '1':
             print('1 selected')
-            getBMI()
+            if BMI > 0 :
+                print("\nToday, your Body Mass Index was calculated as:", round(BMI,2))
+            else:                
+                getBMI()
+                
             main()
             break
         
         elif action == '2':
             print('2 selected')
-            getBMI()
+            if BMI > 0 :
+                pass
+            else:                
+                getBMI()
+                
             getBMR()
             break
          
         elif action == '3':
             print('3 selected')
-            getBMI()
+            if BMI > 0 :
+                pass
+            else:               
+                getBMI()
+                
             getBFP()
             break
          
         elif action == '4':
             print('4 selected')
-            getBMI()
-            getBMR()
+            if BMI > 0 :
+                pass
+            else:               
+                getBMI()
+                
+            if BMR > 0 :
+                pass
+            else:               
+                getBMR()
+                
             enterActivity()
             break
     
@@ -401,6 +440,6 @@ def main():
         
         elif action == 'E':
             print('\nExit selected')
-            print("\nThank you, " + first + ". Enjoy your day.")  
+            print("\nThank you, " + first.capitalize() + ". Enjoy your day.")  
             break
 main() 
